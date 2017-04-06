@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <RadioGroup
+        android:id="@+id/gamelist_rg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ededed"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/gamelist_rb_ing"
+            android:text="进行中"
+            style="@style/business_rb" />
+
+        <RadioButton
+            android:id="@+id/gamelist_rb_pause"
+            android:text="已暂停"
+            style="@style/business_rb" />
+
+        <RadioButton
+            android:id="@+id/gamelist_rb_apply"
+            android:text="报名中"
+            android:checked="true"
+            android:textColor="@color/yellowstr"
+            style="@style/business_rb" />
+
+        <RadioButton
+            android:id="@+id/gamelist_rb_close"
+            android:text="已关闭"
+            style="@style/business_rb" />
+
+        <RadioButton
+            android:id="@+id/gamelist_rb_end"
+            android:text="已结束"
+            style="@style/business_rb" />
+    </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:xh="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/business_rl_main"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:id="@+id/businessinfo_ima_main"
+                    android:layout_width="match_parent"
+                    android:scaleType="centerCrop"
+                    android:layout_height="match_parent" />
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <TextView
+                        android:id="@+id/businessinfo_tv_busname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rb_str_favorable"
+                        android:textColor="@color/titlestr"
+                        android:textStyle="bold|italic"
+                        android:layout_margin="5dp"
+                        android:textSize="@dimen/dimen_25_dip"
+                        android:layout_gravity="bottom|left"/>
+
+                    <ImageView
+                        android:id="@+id/businessinfo_ima_720"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/venues"
+                        android:layout_gravity="right|bottom"/>
+                </FrameLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:background="@color/titlestr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="营业时间："
+                    android:padding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/dimen_18_dip"
+                    android:textColor="#464312"/>
+                <TextView
+                    android:id="@+id/businessinfo_tv_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10:00 - 22:00"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/yellowstr"
+                    android:textSize="@dimen/dimen_20_dip"
+                    android:padding="5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/titlestr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="场馆地址："
+                    android:padding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/dimen_18_dip"
+                    android:textColor="#464312"/>
+                <TextView
+                    android:id="@+id/businessinfo_tv_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:00 - 22:00"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/yellowstr"
+                    android:textSize="@dimen/dimen_20_dip"
+                    android:maxEms="12"
+                    android:padding="5dp"/>
+
+                <ImageView
+                    android:id="@+id/businessinfo_ima_daohang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/loc_03" />
+
+                <ImageView
+                    android:id="@+id/businessinfo_ima_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toRightOf="@+id/businessinfo_ima_daohang"
+                    android:background="@mipmap/phone2" />
+
+            </LinearLayout>
+            <RadioGroup
+                android:id="@+id/business_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/rgcolor"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/business_rb_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:text="场馆信息"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/business_rb_space"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:text="该馆预约"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/business_rb_lesson"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:text="课程表"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/businessinfo_vp"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:visibility="gone"/>
+
+
+            <tools.TagListView
+                android:id="@+id/view_wordwrap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:visibility="gone"
+                xh:horizontalSpacing="18dp"
+                xh:orientation="horizontal"
+                xh:verticalSpacing="6dp" />
+
+            <LinearLayout
+                android:id="@+id/business_ll_notcie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:background="@color/titlestr">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/ima"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="商家公告："
+                    android:padding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/dimen_18_dip"
+                    android:textColor="#464312"/>
+
+                <TextView
+                    android:id="@+id/businessinfo_tv_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10:00 - 22:00"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#00a1ff"
+                    android:textSize="@dimen/dimen_19_dip"
+                    android:padding="5dp"/>
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/business_ll_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:background="@color/titlestr">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/ima"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="场馆简介："
+                    android:padding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/dimen_18_dip"
+                    android:textColor="#464312"/>
+
+                <TextView
+                    android:id="@+id/businessinfo_tv_intro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10:00 - 22:00"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#00a1ff"
+                    android:maxLines="5"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/dimen_19_dip"
+                    android:padding="5dp"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/business_view"
+                android:layout_width="match_parent"
+                android:background="@color/rgcolor"
+                android:layout_height="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:background="@color/titlestr">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/ima"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="场馆图片："
+                    android:padding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/dimen_18_dip"
+                    android:textColor="#464312"/>
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/business_re"
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

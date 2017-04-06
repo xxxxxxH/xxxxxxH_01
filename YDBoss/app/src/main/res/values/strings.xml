@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">YDBoss</string>
+    <string name="rb_str_all">所有商家</string>
+    <string name="rb_str_favorable">优惠商家</string>
+    <string name="rb_str_user">注册用户</string>
+    <string name="title_str_tv">所有商家</string>
+</resources>

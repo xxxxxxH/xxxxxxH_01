@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/business_bottom_rl"
+    android:visibility="gone">
+
+    <RadioGroup
+        android:id="@+id/business_bottom_rg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@color/rgcolor"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/business_bottom_game"
+            style="@style/business_rb"
+            android:drawableTop="@mipmap/game"
+            android:text="赛事"/>
+        <RadioButton
+            android:id="@+id/business_bottom_coach"
+            style="@style/business_rb"
+            android:drawableTop="@mipmap/coach"
+            android:text="教练"/>
+        <RadioButton
+            android:id="@+id/business_bottom_home"
+            style="@style/business_rb"
+            android:drawableTop="@mipmap/main_bussines"
+            android:text="场馆主页"/>
+        <RadioButton
+            android:id="@+id/business_bottom_goods"
+            style="@style/business_rb"
+            android:drawableTop="@mipmap/shop"
+            android:text="商城"/>
+        <RadioButton
+            android:id="@+id/business_bottom_recurit"
+            style="@style/business_rb"
+            android:drawableTop="@mipmap/zp"
+            android:text="招聘"/>
+
+    </RadioGroup>
+</RelativeLayout>

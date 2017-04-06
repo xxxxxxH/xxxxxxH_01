@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/goods_ima"
+            android:layout_width="150dp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_height="80dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/goods_ima">
+
+            <TextView
+                android:id="@+id/goods_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_23_dip"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/goods_tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/goods_tv_name"
+                android:textSize="@dimen/dimen_19_dip"
+                android:text="1111" />
+
+            <TextView
+                android:id="@+id/goods_tv_original_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/goods_tv_price"
+                android:textSize="@dimen/dimen_18_dip"
+                android:text="1" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

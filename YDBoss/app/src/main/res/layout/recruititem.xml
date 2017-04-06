@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/recuritlistitem_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/dimen_20_dip"
+            android:text="职位名称: 大保健培训师" />
+
+
+        <TextView
+            android:id="@+id/recuritlistitem_bname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="15"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/dimen_18_dip"
+            android:textColor="#999999"
+            android:layout_below="@+id/recuritlistitem_tv_name"
+            android:text="商家名称" />
+
+
+        <TextView
+            android:id="@+id/recuritlistitem_tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/recuritlistitem_tv_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:textColor="#ff8c00"
+            android:textSize="@dimen/dimen_18_dip"
+            android:text="工资待遇: 面议" />
+        <ImageView
+            android:id="@+id/ima_user_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:background="@mipmap/arrow_02" />
+    </RelativeLayout>
+
+</LinearLayout>

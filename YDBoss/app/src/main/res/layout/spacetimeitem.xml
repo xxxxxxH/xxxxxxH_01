@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:orientation="horizontal"
+    android:paddingTop="5dp">
+    <TextView
+        android:id="@+id/spaceitem_item_time"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_20_dip"
+        android:text="asd"
+        android:layout_gravity="left|center_vertical"
+        android:paddingLeft="20dp" />
+
+    <TextView
+        android:id="@+id/spaceitem_item_money"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/yellowstr"
+        android:layout_gravity="right|center_vertical"
+        android:textSize="@dimen/dimen_22_dip"
+        android:text="asd"
+        android:textStyle="bold" />
+</LinearLayout>

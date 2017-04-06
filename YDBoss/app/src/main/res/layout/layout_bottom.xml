@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/main_bottom_rl"
+    android:layout_height="match_parent">
+<RadioGroup
+    android:id="@+id/rg"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:layout_alignParentBottom="true"
+    android:background="@color/rgcolor"
+    android:orientation="horizontal">
+    <RadioButton
+        android:id="@+id/rb_all"
+        android:text="@string/rb_str_all"
+        android:drawableTop="@mipmap/allbussines"
+        style="@style/business_rb"/>
+    <RadioButton
+        android:id="@+id/rb_favorable"
+        android:text="@string/rb_str_favorable"
+        android:drawableTop="@mipmap/favorbusiness"
+        style="@style/business_rb"/>
+    <RadioButton
+        android:id="@+id/rb_user"
+        style="@style/business_rb"
+        android:text="@string/rb_str_user"
+        android:drawableTop="@mipmap/user"/>
+</RadioGroup>
+</RelativeLayout>
